@@ -1,0 +1,13 @@
+apply plugin: 'com.novoda.bintray-release'
+//新添加
+publish {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+    userOrg = properties.getProperty('bintray.user') //在https://bintray.com上注册的用户名
+    groupId = PROJ_GROUP //jCenter上的路径
+    artifactId = PROJ_NAME //要上传的library名称（和二、4中的package相同）
+    publishVersion = PROJ_VERSION //library的版本号
+    desc = PROJ_DESCRIPTION //library的简单描述
+    website = PROJ_WEBSITEURL //library的开源地址，例如在github上的地址
+}
