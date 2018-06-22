@@ -2,7 +2,7 @@
 
 latest version :  [ ![Download](https://api.bintray.com/packages/hfutxqd/maven/qrcode/images/download.svg) ](https://bintray.com/hfutxqd/maven/qrcode/_latestVersion)
 
-QRCodeCore is a very lite library for encoding QRCode.
+QRCodeWriter is a very lite library for encoding QRCode.
 It only has a total size of about 60kb.
 
 It is based on [QRGen](https://github.com/kenglxn/QRGen) and [ZXing](https://github.com/zxing/zxing) , simplifying a lot of code.
